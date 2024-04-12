@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev-css": "npx tailwindcss -i ./src/assets/css/input.css -o ./dist/css/style.css --watch",
     "dev": "webpack --mode development --watch --entry ./src/assets/js/script.js -o ./dist/main",
-    "build-css": "npx tailwindcss -o ./dist/css/style.css --minify",
+    "build-css": "npx tailwindcss -i ./src/assets/css/input.css -o ./dist/css/style.css --minify",
     "build": "webpack --mode production --entry ./src/assets/js/script.js -o ./dist/main"
   },
   "author": "",
