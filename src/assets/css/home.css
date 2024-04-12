@@ -24,7 +24,7 @@
   @apply py-8 px-8 mx-8 rounded-2xl shadow-xl absolute -top-12 bg-white z-20 lg:left-[10%] lg:max-w-6xl;
 }
 .sess2__wrapper h2 {
-  @apply font-sora text-center text-[#0f2c64] text-2xl mb-8 lg:text-3xl;
+  @apply font-sora text-center text-[#203c89] text-2xl mb-8 lg:text-3xl;
 }
 .sess2__wrapper h2 span {
   @apply font-bold;
@@ -39,13 +39,13 @@
   @apply font-bold;
 }
 .sess2__content p:first-child {
-  @apply bg-[#ffc700] text-[#0f2c64] rounded-tr-xl rounded-tl-xl rounded-br-xl;
+  @apply bg-[#ffc700] text-[#203c89] rounded-tr-xl rounded-tl-xl rounded-br-xl;
 }
 .sess2__content p:nth-child(2) {
-  @apply bg-[#eee] text-[#0f2c64] rounded-tr-xl rounded-tl-xl rounded-br-xl;
+  @apply bg-[#eee] text-[#203c89] rounded-tr-xl rounded-tl-xl rounded-br-xl;
 }
 .sess2__content p:last-child {
-  @apply bg-[#0f2c64] text-white rounded-tr-xl rounded-tl-xl rounded-br-xl pt-16;
+  @apply bg-[#203c89] text-white rounded-tr-xl rounded-tl-xl rounded-br-xl pt-16;
 }
 
 /* controls styles and media query in section 3 */
@@ -53,13 +53,13 @@
   @apply container mx-auto py-8 px-8 mb-16;
 }
 #sess3 h2 {
-  @apply font-sora text-center text-[#0f2c64] text-2xl mb-8 lg:text-3xl capitalize;
+  @apply font-sora text-center text-[#203c89] text-2xl mb-8 lg:text-3xl capitalize;
 }
 #sess3 h2 span {
   @apply font-bold;
 }
 .treatment__box {
-  @apply w-[384px] h-[384px] py-4 px-6 font-sora font-light text-[#0f2c64] bg-[#eee] rounded-xl;
+  @apply w-[384px] h-[384px] py-4 px-6 font-sora font-light text-[#203c89] bg-[#eee] rounded-xl;
 }
 .treatment__box h3 {
   @apply font-semibold text-lg my-8 flex items-center;
@@ -98,5 +98,49 @@
 /* controls styles and media query in section 4 */
 
 #sess4 {
-  @apply flex flex-col container mx-auto py-4 px-8;
+  @apply flex flex-col container mx-auto pb-[360px] px-8 relative lg:flex-row lg:justify-end;
+}
+.sess4__content {
+  @apply lg:pl-16;
+}
+.sess4__content h2 {
+  @apply font-sora font-bold text-left text-[#203c89] text-3xl mb-2 lg:text-4xl capitalize;
+}
+.sess4__content p {
+  @apply font-sora text-left text-[#203c89] mb-8;
+}
+
+.clinic3d {
+  @apply max-w-sm h-full object-contain absolute right-0 -bottom-96 lg:relative lg:-bottom-28 lg:max-w-2xl;
+}
+
+.clinics__list {
+  @apply lg:grid grid-cols-2 justify-start items-start;
+}
+.clinics__list-item:first-child {
+  @apply col-span-2;
+}
+.clinics__list-item {
+  @apply mb-4;
+}
+.clinics__list-item h3 {
+  @apply font-sora font-bold text-left text-[#203c89] text-xl mb-2 lg:text-2xl capitalize;
+}
+.clinics__list-item p {
+  @apply mb-2 pl-8 flex items-center max-w-prose;
+}
+.clinics__list-item p:before {
+  content: "";
+  display: block;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #203c89;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* controls styles and media query in section 5 */
+
+#sess5 {
+  @apply bg-[#223bb4] mt-20 rounded-e-3xl py-12 px-8;
 }
