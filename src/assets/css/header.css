@@ -1,0 +1,92 @@
+header {
+  /* @apply bg-gradient-to-r from-[#0F2C64] to-[#336BC5]; */
+  background: linear-gradient(to right, #0f2c64 40%, #336bc5);
+}
+.header__wrapper {
+  @apply container mx-auto py-4 px-8 text-white font-semibold flex items-center justify-evenly font-sora;
+}
+
+#mobile__btn {
+  display: block;
+  border-top: 4px solid white;
+  width: 28px;
+  border-radius: 2px;
+  @apply lg:hidden;
+}
+#mobile__btn::before,
+#mobile__btn::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  margin-top: 5px;
+  transition: 0.5s;
+  position: relative;
+  border-radius: 2px;
+}
+#mobile__btn.active {
+  border-top-color: transparent;
+}
+#mobile__btn.active::before {
+  transform: rotate(135deg);
+}
+#mobile__btn.active::after {
+  transform: rotate(-135deg);
+  top: -9px;
+}
+
+.logo {
+  @apply ml-10;
+}
+
+.logo img {
+  @apply w-36 h-full;
+}
+
+.header__nav {
+  background: linear-gradient(to right, #0f2c64 44%, #336bc5);
+  @apply absolute top-36 left-0 w-full border-t-2 border-t-gray-500 hidden lg:block lg:bg-transparent lg:relative lg:top-0 lg:max-w-2xl lg:border-t-0;
+}
+@media (min-width: 1024px) {
+  .header__nav {
+    background: transparent;
+  }
+}
+.header__nav.active {
+  @apply block;
+}
+
+.header__nav-menu {
+  @apply px-8 py-4 lg:flex lg:items-center lg:justify-between;
+}
+.header__nav-menu li {
+  @apply py-3 border-b-2 border-gray-400 text-center lg:border-b-0;
+}
+.header__nav-menu li:last-child {
+  @apply border-b-0;
+}
+
+.header__contact {
+  @apply flex flex-col;
+}
+.header__contact a {
+  @apply flex items-center py-2 px-4;
+}
+
+.header__contact a:first-child:before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  background: url("../img/phone.svg") center center no-repeat;
+  margin-right: 0.25rem;
+}
+.header__contact a:last-child:before {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  background: url("../img/whatsapp.svg") center center no-repeat;
+  margin-right: 0.25rem;
+}

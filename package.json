@@ -1,0 +1,24 @@
+{
+  "name": "sempresorrindo",
+  "version": "1.0.0",
+  "description": "a website for a dentist trademark",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-css": "npx tailwindcss -i ./src/assets/css/input.css -o ./dist/css/style.css --watch",
+    "dev": "webpack --mode development --watch --entry ./src/assets/js/script.js -o ./dist/main",
+    "build-css": "npx tailwindcss -o ./dist/css/style.css --minify",
+    "build": "webpack --mode production --entry ./src/assets/js/script.js -o ./dist/main"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "tailwindcss": "^3.4.3",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  }
+}

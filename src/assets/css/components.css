@@ -1,0 +1,3 @@
+.book__btn {
+  @apply text-[#0f2c64] font-sora font-semibold capitalize py-3 px-6 bg-[#ffc700] rounded-tr-lg rounded-tl-lg rounded-br-lg;
+}
