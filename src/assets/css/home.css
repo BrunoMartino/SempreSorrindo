@@ -95,4 +95,8 @@
   @apply hidden;
 }
 
-/* controls styles and media query in section 3 */
+/* controls styles and media query in section 4 */
+
+#sess4 {
+  @apply flex flex-col container mx-auto py-4 px-8;
+}

@@ -561,7 +561,52 @@ header {
   display: none;
 }
 
-/* controls styles and media query in section 3 */
+/* controls styles and media query in section 4 */
+
+#sess4{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  #sess4{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  #sess4{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  #sess4{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  #sess4{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  #sess4{
+    max-width: 1536px;
+  }
+}
+
+#sess4{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
 /* ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com */
 
