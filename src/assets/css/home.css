@@ -21,7 +21,7 @@
 }
 
 .sess2__wrapper {
-  @apply py-8 px-8 mx-8 rounded-2xl shadow-xl lg:absolute -top-12 bg-white z-20 lg:left-10 lg:max-w-6xl;
+  @apply py-8 px-8 mx-8 rounded-2xl shadow-xl lg:absolute -top-12 bg-white z-20 lg:left-24 lg:max-w-6xl;
 }
 .sess2__wrapper h2 {
   @apply font-sora text-center text-[#203c89] text-2xl mb-8 lg:text-3xl;
