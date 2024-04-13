@@ -167,24 +167,118 @@
 .office__img {
   @apply w-[348px] h-[348px] object-cover object-center;
 }
+
 #sess6 {
   @apply mt-16 container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 border-b-[12px] border-b-[#223b84];
 }
 .sess6__content {
-  @apply py-8 px-8 lg:max-w-xl;
+  @apply py-8 lg:max-w-xl;
 }
 
 .sess6__content h2 {
-  @apply font-sora text-left text-[#27282c] text-3xl mb-6 lg:text-4xl capitalize;
+  @apply font-sora text-left text-[#27282c] text-3xl mb-6 lg:text-4xl capitalize px-8;
 }
 
 .sess6__content h2 span {
   @apply font-bold text-[#203c89];
 }
 .sess6__content p {
-  @apply font-sora text-left text-[#27282c] mb-6 text-lg;
+  @apply font-sora text-left text-[#27282c] mb-6 text-lg px-8;
+}
+.sess6__content img {
+  @apply max-w-md h-full lg:max-w-lg px-8;
 }
 
 .sess6__avatar {
   @apply hidden lg:block lg:max-w-md lg:h-full;
+}
+#artic1 {
+  @apply container mx-auto py-8 px-8 flex flex-col;
+}
+.artic1__content {
+  @apply mb-8 mx-auto flex flex-col items-start justify-start;
+}
+#artic1 h3 {
+  @apply font-sora font-bold text-left text-[#203c89] text-xl mb-2 lg:text-2xl capitalize;
+}
+.artic1__content p {
+  @apply font-sora text-left text-[#27282c] mb-6 text-lg lg:max-w-[760px];
+}
+.artic1__content a {
+  @apply lg:max-w-max;
+}
+
+.prize__list {
+}
+
+.prize-box {
+  @apply flex flex-col w-[348px] rounded-t-xl;
+}
+.prize-box img {
+  @apply h-full object-cover object-center rounded-b-2xl;
+}
+.prize-box h4 {
+  @apply font-sora text-center bg-[#223b84] py-4 px-4 text-white font-semibold rounded-t-2xl;
+}
+#sess7 {
+  @apply py-8 px-8 container mx-auto font-sora;
+}
+#sess7 h2 {
+  @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2  capitalize py-12;
+}
+
+.news__item {
+  @apply bg-[#fff] shadow-xl w-[360px];
+}
+.news__item h4 {
+  @apply max-w-[360px] font-sora text-left text-[#27282c] py-4 px-4 font-semibold uppercase;
+}
+.news__item p {
+  @apply max-w-[360px] font-sora text-xs text-left text-[#27282c] py-4 px-4 font-light;
+}
+
+.news__item img {
+  @apply w-[360px] h-[280px] object-fill object-left-top;
+}
+.news__item-foot {
+  @apply flex items-center justify-between;
+}
+.news__item-foot p:last-child {
+  @apply text-[#203c89] font-medium;
+}
+
+#sess8 {
+  @apply flex flex-col container mx-auto py-12 px-8;
+}
+
+.review__wrapper {
+  @apply flex flex-col relative justify-center items-center;
+}
+
+.review__wrapper h3 {
+  @apply font-sora font-bold text-center text-[#203c89] text-3xl mb-2 lg:text-4xl;
+}
+.review__wrapper p {
+  @apply font-sora text-left text-[#27282c] mb-6 text-lg px-8;
+}
+.review__wrapper img {
+  @apply w-[280px] h-full px-8;
+}
+.review__wrapper h4 {
+  @apply absolute text-2xl font-bold font-sora bottom-[116px];
+}
+.review__box {
+  @apply bg-[#eee] shadow-xl w-[360px] px-4 py-4 rounded-xl flex flex-col items-center;
+}
+.review__box p {
+  @apply py-12 max-w-[30ch] text-center font-sora;
+}
+.review__box-name {
+  @apply flex items-center gap-4 font-sora;
+}
+.review__box-name img {
+  @apply w-12;
+}
+#sess8 a.book__btn {
+  @apply max-w-max self-end mt-12;
 }

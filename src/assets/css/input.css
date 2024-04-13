@@ -3,7 +3,12 @@
 @import url("./components.css");
 @import url("./header.css");
 @import url("./home.css");
+@import url("./footer.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply overflow-x-hidden;
+}

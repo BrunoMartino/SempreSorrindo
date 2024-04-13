@@ -1,0 +1,46 @@
+footer {
+  @apply bg-[#223b84];
+}
+.footer__wrapper {
+  @apply px-8 py-8 container mx-auto font-sora text-white lg:flex lg:justify-evenly lg:items-start;
+}
+.footer__links-list {
+  @apply grid grid-cols-2 mb-4;
+}
+.footer__links-list a,
+.footer__links-contact a,
+.footer__info p {
+  @apply text-sm py-2 block;
+}
+.footer__links-list a:hover {
+  @apply text-[#ffc700];
+}
+
+.footer__links-contact,
+.footer__info {
+  @apply flex items-center mb-6;
+}
+
+.footer__links-contact:before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url("../img/whatsapp-2.svg") center center no-repeat;
+  margin-right: 12px;
+}
+.footer__info:before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url("../img/calendar.svg") center center no-repeat;
+  margin-right: 12px;
+}
+.footer__media {
+  @apply flex justify-around items-center pb-8 lg:grid lg:grid-cols-2 lg:gap-4;
+}
+
+.footer__media img {
+  @apply w-7 h-7;
+}
