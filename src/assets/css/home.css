@@ -17,7 +17,7 @@
 
 /* controls styles and media query in section 2 */
 #sess2 {
-  @apply container mx-auto pb-[1060px] relative h-full lg:pb-[460px];
+  @apply container mx-auto pb-[1060px] relative h-full lg:pb-[460px] overflow-x-hidden;
 }
 
 .sess2__wrapper {
@@ -111,7 +111,7 @@
 }
 
 .clinic3d {
-  @apply max-w-sm h-full object-contain absolute right-0 -bottom-96 lg:relative lg:-bottom-28 lg:max-w-2xl;
+  @apply max-w-sm h-full object-contain absolute -bottom-96 lg:relative lg:-bottom-28 lg:max-w-2xl;
 }
 
 .clinics__list {
@@ -202,7 +202,7 @@
   @apply font-sora font-bold text-left text-[#203c89] text-xl mb-2 lg:text-2xl capitalize;
 }
 .artic1__content p {
-  @apply font-sora text-left text-[#27282c] mb-6 text-lg lg:max-w-[760px];
+  @apply font-sora text-left max-w-[45ch] text-[#27282c] mb-6 text-lg lg:max-w-[760px];
 }
 .artic1__content a {
   @apply lg:max-w-max;
@@ -221,7 +221,7 @@
   @apply font-sora text-center bg-[#223b84] py-4 px-4 text-white font-semibold rounded-t-2xl;
 }
 #sess7 {
-  @apply py-8 px-8 container mx-auto font-sora;
+  @apply py-8 container mx-auto font-sora;
 }
 #sess7 h2 {
   @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2  capitalize py-12;
@@ -248,7 +248,7 @@
 }
 
 #sess8 {
-  @apply flex flex-col container mx-auto py-12 px-8;
+  @apply flex flex-col container mx-auto py-12;
 }
 
 .review__wrapper {
