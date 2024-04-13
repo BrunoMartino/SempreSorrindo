@@ -1,15 +1,15 @@
 /* controls styles and media query in section 1 */
 
 #sess1 {
-  @apply bg-[url("../img/sess1-bg-mobile.webp")] h-[100vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-bg-desktop.webp")] py-8 px-8;
+  @apply bg-[url("../img/sess1-bg-mobile.webp")] h-[85vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-bg-desktop.webp")] py-8 px-8;
 }
 
 .sess1_wrapper {
-  @apply pt-4 pb-8 px-4 bg-black bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32;
+  @apply pt-4 pb-8 px-4 bg-black bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32 container mx-auto;
 }
 
 .sess1_wrapper h1 {
-  @apply text-4xl font-sora text-white max-w-md mb-8 font-bold lg:text-5xl lg:max-w-xl;
+  @apply text-3xl font-sora text-white max-w-md mb-8 font-bold lg:text-5xl lg:max-w-xl;
 }
 .sess1_wrapper h1 span {
   @apply text-yellow-500;
@@ -21,7 +21,7 @@
 }
 
 .sess2__wrapper {
-  @apply py-8 px-8 mx-8 rounded-2xl shadow-xl lg:absolute -top-12 bg-white z-20 left-10 lg:max-w-6xl;
+  @apply py-8 px-8 mx-8 rounded-2xl shadow-xl lg:absolute -top-12 bg-white z-20 lg:left-10 lg:max-w-6xl;
 }
 .sess2__wrapper h2 {
   @apply font-sora text-center text-[#203c89] text-2xl mb-8 lg:text-3xl;

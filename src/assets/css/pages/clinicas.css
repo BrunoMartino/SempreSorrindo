@@ -1,0 +1,85 @@
+#sess1_clinics {
+  @apply bg-[url("../img/sess1-clinics-mobile.webp")] h-[85vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-clinics-desktop.webp")] py-8 px-8;
+}
+
+.sess1_clinics-wrapper {
+  @apply pt-48 pb-8 px-4 bg-transparent bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32 lg:pt-32 container mx-auto;
+}
+
+.sess1_clinics-wrapper h1 {
+  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase;
+}
+.sess1_clinics-wrapper h1 span {
+  @apply text-[#ffc700];
+}
+
+#sess2_clinics {
+  @apply container mx-auto py-16 relative h-full lg:pb-48;
+}
+
+.sess2_clinics-wrapper {
+  @apply py-8 px-8 mx-8 rounded-2xl shadow-xl lg:absolute -top-12 bg-white z-20 lg:left-36 lg:max-w-6xl flex flex-col justify-center items-center lg:flex-row;
+}
+.sess2_clinics-wrapper p {
+  @apply font-sora text-center text-[black] text-sm mb-8 lg:text-base lg:max-w-48 lg:mx-16;
+}
+.sess2_clinics-wrapper p:nth-child(2) {
+  @apply border-b-2 border-b-[#203c89] border-t-2 border-t-[#203c89] py-8 lg:border-b-0 lg:border-t-0 relative;
+}
+.sess2_clinics-wrapper p:nth-child(2):before,
+.sess2_clinics-wrapper p:nth-child(2):after {
+  content: "";
+  display: none;
+  width: 2px;
+  height: 96px;
+  background-color: #203c89;
+  position: absolute;
+}
+.sess2_clinics-wrapper p:nth-child(2):before {
+  left: -48px;
+  top: 0;
+}
+.sess2_clinics-wrapper p:nth-child(2):after {
+  right: -48px;
+  top: 0;
+}
+@media (min-width: 1024px) {
+  .sess2_clinics-wrapper p:nth-child(2):before,
+  .sess2_clinics-wrapper p:nth-child(2):after {
+    display: block;
+  }
+}
+
+.sess2_clinics-wrapper p span {
+  @apply font-bold text-[#123976] text-2xl lg:text-3xl;
+}
+#sess3_clinics {
+  @apply container mx-auto px-8 pb-12;
+}
+
+.sess3_title {
+  @apply max-w-prose text-center text-xl py-8 lg:text-2xl text-[#203c89] font-sora;
+}
+.sess3_title span {
+  @apply text-2xl font-bold;
+}
+.clinics_grid {
+  @apply grid gap-12 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-6;
+}
+.clinics_grid-box {
+  @apply max-w-sm flex flex-col shadow-lg bg-[#fefefe] items-start justify-center rounded-xl;
+}
+.clinics_grid-box img {
+  @apply w-[384px] h-[280px] rounded-lg object-cover object-center;
+}
+.clinics_grid-box h2 {
+  @apply px-2 font-bold text-2xl py-2 text-left text-[#203c89] font-sora pt-4 pb-6;
+}
+
+.clinics_grid-box p {
+  @apply font-sora text-gray-800 py-4 px-2 opacity-80 border-t-4 border-t-[#ffc700] w-full;
+}
+
+.clinics_grid-box a {
+  @apply w-full text-center;
+}

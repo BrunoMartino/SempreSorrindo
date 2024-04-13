@@ -1,0 +1,32 @@
+#sess1_prizes {
+  @apply bg-[url("../img/sess1-prizes-mobile.webp")] h-[85vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-prizes-desktop.webp")] py-8 px-8;
+}
+
+.sess1_prizes-wrapper {
+  @apply pt-60 pb-8 px-4 bg-transparent bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32 lg:pt-32 container mx-auto;
+}
+
+.sess1_prizes-wrapper h1 {
+  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase;
+}
+
+#sess2_prizes {
+  @apply container mx-auto px-8 py-12 flex justify-center;
+}
+#sess2_prizes p {
+  @apply max-w-prose text-center text-lg lg:text-xl text-[#203c89] font-sora;
+}
+#sess3_prizes {
+  @apply container mx-auto px-8 py-12;
+}
+
+.prizes_grid {
+  @apply grid gap-12 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-6;
+}
+
+.prizes_grid-box {
+  @apply max-w-sm flex flex-col-reverse shadow-lg bg-[#eee];
+}
+.prizes_grid-box h2 {
+  @apply text-center px-4 py-4 font-semibold font-sora uppercase;
+}
