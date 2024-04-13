@@ -98,7 +98,7 @@
 /* controls styles and media query in section 4 */
 
 #sess4 {
-  @apply flex flex-col container mx-auto pb-[360px] px-8 relative lg:flex-row lg:justify-end;
+  @apply flex flex-col container mx-auto pb-[360px] px-8 relative lg:flex-row lg:justify-end lg:pb-28;
 }
 .sess4__content {
   @apply lg:pl-16;
@@ -142,5 +142,31 @@
 /* controls styles and media query in section 5 */
 
 #sess5 {
-  @apply bg-[#223bb4] mt-20 rounded-e-3xl py-12 px-8;
+  @apply bg-[#223b84] mt-20 rounded-3xl pt-28 pb-20;
+}
+.sess5__wrapper {
+  @apply px-8 relative container mx-auto;
+}
+.sess5__wrapper h2 {
+  @apply font-sora text-center text-white text-3xl mb-8 capitalize;
+}
+.sess5__wrapper h2 span {
+  @apply text-[#ffc700] font-bold;
+}
+
+.stripe__floating {
+  @apply bg-[#ffc700] py-6 px-4 text-center rounded-tr-2xl rounded-tl-2xl rounded-br-2xl absolute z-20 -top-40 mr-8 lg:max-w-4xl lg:flex lg:items-center lg:text-left lg:justify-between lg:left-[25%] lg:top-[-164px];
+}
+.stripe__floating p {
+  @apply font-sora font-medium mb-6 text-sm lg:max-w-lg;
+}
+.stripe__floating a {
+  @apply bg-[#0f2c64] text-[#ffc700] text-center;
+}
+
+.office__img {
+  @apply w-[348px] h-[348px] object-cover object-center;
+}
+#sess6 {
+  @apply mt-16 container mx-auto flex flex-col;
 }
