@@ -1,6 +1,12 @@
 header {
   /* @apply bg-gradient-to-r from-[#0F2C64] to-[#336BC5]; */
   background: linear-gradient(to right, #0f2c64 40%, #336bc5);
+  @apply lg:bg-transparent lg:w-full lg:absolute lg:top-0 lg:left-0 lg:z-20;
+}
+@media (min-width: 1024px) {
+  header {
+    background: transparent;
+  }
 }
 .header__wrapper {
   @apply container mx-auto py-4 px-8 text-white font-semibold flex items-center justify-evenly font-sora;
@@ -71,7 +77,7 @@ header {
   @apply flex flex-col text-sm lg:text-base;
 }
 .header__contact a {
-  @apply flex items-center py-2 px-4;
+  @apply flex items-center py-2;
 }
 
 .header__contact a:first-child:before {

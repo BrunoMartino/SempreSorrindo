@@ -5,7 +5,7 @@
 }
 
 .sess1_wrapper {
-  @apply pt-4 pb-8 px-4 bg-black bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:my-24;
+  @apply pt-4 pb-8 px-4 bg-black bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32;
 }
 
 .sess1_wrapper h1 {
@@ -168,5 +168,23 @@
   @apply w-[348px] h-[348px] object-cover object-center;
 }
 #sess6 {
-  @apply mt-16 container mx-auto flex flex-col;
+  @apply mt-16 container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 border-b-[12px] border-b-[#223b84];
+}
+.sess6__content {
+  @apply py-8 px-8 lg:max-w-xl;
+}
+
+.sess6__content h2 {
+  @apply font-sora text-left text-[#27282c] text-3xl mb-6 lg:text-4xl capitalize;
+}
+
+.sess6__content h2 span {
+  @apply font-bold text-[#203c89];
+}
+.sess6__content p {
+  @apply font-sora text-left text-[#27282c] mb-6 text-lg;
+}
+
+.sess6__avatar {
+  @apply hidden lg:block lg:max-w-md lg:h-full;
 }
