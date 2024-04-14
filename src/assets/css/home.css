@@ -223,7 +223,7 @@
 #sess7 {
   @apply py-8 container mx-auto font-sora px-8;
 }
-#sess7 h2 {
+#sess7 h3 {
   @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2  capitalize py-12;
 }
 

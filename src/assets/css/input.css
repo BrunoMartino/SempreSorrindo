@@ -6,6 +6,7 @@
 @import url("./footer.css");
 @import url("./pages/premios.css");
 @import url("./pages/clinicas.css");
+@import url("./pages/clinica.css");
 
 @tailwind base;
 @tailwind components;

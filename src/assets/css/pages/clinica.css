@@ -1,0 +1,81 @@
+#sess1_single-clinic {
+  @apply h-[85vh] w-full bg-cover bg-center bg-no-repeat  py-8 px-8;
+}
+#sess2_single-clinic {
+  @apply container mx-auto px-8 py-16  max-w-5xl;
+}
+#sess2_single-clinic h1 {
+  @apply font-sora font-bold text-left text-3xl mb-2 lg:text-4xl capitalize;
+}
+#sess2_single-clinic h1 span {
+  @apply text-[#203c89];
+}
+.sess2_single-clinic-content {
+  @apply flex items-center justify-start gap-6 pt-2;
+}
+
+.sess2_single-clinic-content p {
+  @apply bg-[#ffc700] py-2 px-4 rounded-full text-sm max-w-max font-sora font-semibold;
+}
+.sess2_single-clinic-content nav ul {
+  @apply flex items-center gap-3;
+}
+.sess2_single-clinic-content nav ul li img {
+  @apply w-6 h-6;
+}
+#sess3_single-clinic {
+  @apply container mx-auto px-8 py-8  max-w-5xl;
+}
+#sess3_single-clinic h2 {
+  @apply text-2xl font-sora;
+}
+#sess3_single-clinic p {
+  @apply font-sora text-xs uppercase;
+}
+.phone__contact,
+.whatsapp__contact {
+  @apply flex flex-col mt-6;
+}
+.phone__contact a,
+.whatsapp__contact a,
+.address__info h3 {
+  @apply font-sora font-semibold text-lg py-2 flex items-center;
+}
+.phone__contact a:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url("/dist/img/phone.svg") center center no-repeat;
+  margin-right: 8px;
+}
+.whatsapp__contact a:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url("/dist/img/whatsapp.svg") center center no-repeat;
+  margin-right: 8px;
+}
+
+.clinic__open-info {
+  @apply container mx-auto px-8 py-8  max-w-5xl;
+}
+
+.clinic__open-info p {
+  @apply font-sora text-xl py-2 flex items-center max-w-[25ch] lg:max-w-prose;
+}
+.clinic__open-info p:before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url("/dist/img/calendar-blue.svg") center center no-repeat;
+  margin-right: 8px;
+}
+#sess4_single_clinic {
+  @apply container mx-auto px-8 py-8;
+}
+#sess4_single_clinic iframe {
+  @apply w-[85vw];
+}

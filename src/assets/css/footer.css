@@ -2,7 +2,7 @@ footer {
   @apply bg-[#223b84];
 }
 .footer__wrapper {
-  @apply px-8 py-8 container mx-auto font-sora text-white lg:flex lg:justify-evenly lg:items-start;
+  @apply px-8 pt-8 pb-4 container mx-auto font-sora text-white lg:flex lg:justify-evenly lg:items-start;
 }
 .footer__links-list {
   @apply grid grid-cols-2 mb-4;
@@ -38,7 +38,7 @@ footer {
   margin-right: 12px;
 }
 .footer__media {
-  @apply flex justify-around items-center pb-8 lg:grid lg:grid-cols-2 lg:gap-4;
+  @apply flex justify-around items-center pb-4 lg:grid lg:grid-cols-2 lg:gap-4;
 }
 
 .footer__media img {

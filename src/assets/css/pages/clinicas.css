@@ -64,7 +64,7 @@
   @apply text-2xl font-bold;
 }
 .clinics_grid {
-  @apply grid gap-12 md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-6;
+  @apply grid gap-12 justify-center items-center md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-6;
 }
 .clinics_grid-box {
   @apply max-w-sm flex flex-col shadow-lg bg-[#fefefe] items-start justify-center rounded-xl;
