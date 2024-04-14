@@ -221,7 +221,7 @@
   @apply font-sora text-center bg-[#223b84] py-4 px-4 text-white font-semibold rounded-t-2xl;
 }
 #sess7 {
-  @apply py-8 container mx-auto font-sora;
+  @apply py-8 container mx-auto font-sora px-8;
 }
 #sess7 h2 {
   @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2  capitalize py-12;
@@ -248,7 +248,7 @@
 }
 
 #sess8 {
-  @apply flex flex-col container mx-auto py-12;
+  @apply flex flex-col container mx-auto py-12 px-8;
 }
 
 .review__wrapper {
