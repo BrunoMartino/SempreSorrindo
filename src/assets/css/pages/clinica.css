@@ -46,7 +46,8 @@
   display: block;
   width: 36px;
   height: 36px;
-  background: url("/SempreSorrindo/dist/img/phone.svg") center center no-repeat;
+  background: url("/SempreSorrindo/dist/img/phone-blue.svg") center center
+    no-repeat;
   margin-right: 8px;
 }
 .whatsapp__contact a:before {
@@ -54,7 +55,7 @@
   display: block;
   width: 36px;
   height: 36px;
-  background: url("/SempreSorrindo/dist/img/whatsapp.svg") center center
+  background: url("/SempreSorrindo/dist/img/whatsapp-blue.svg") center center
     no-repeat;
   margin-right: 8px;
 }
