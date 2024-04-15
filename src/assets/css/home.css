@@ -1,31 +1,32 @@
 /* controls styles and media query in section 1 */
 
 #sess1 {
-  @apply bg-[url("../img/sess1-bg-mobile.webp")] h-[75vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-bg-desktop.webp")] py-8 px-8;
+  @apply bg-[url("../img/sess1-bg-mobile.webp")] h-[75vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-bg-desktop.webp")] lg:h-[90vh] py-8 px-8;
 }
 
 .sess1_wrapper {
-  @apply flex flex-col h-full w-full justify-end container mx-auto pb-12;
+  @apply flex flex-col h-full w-full justify-end container mx-auto pb-12 lg:items-start;
 }
 
 .sess1_wrapper h1 {
-  @apply text-3xl font-sora text-white w-full mb-8 font-bold;
+  @apply text-3xl font-sora text-white w-full mb-8 font-bold lg:max-w-md lg:ml-16 lg:text-4xl;
 }
 .sess1_wrapper h1 span {
-  @apply text-yellow-500;
+  @apply text-[#FFC700];
 }
 .sess1_wrapper a {
-  @apply max-w-max;
+  @apply max-w-max lg:ml-16;
 }
 
 /* controls styles and media query in section 2 */
 #sess2 {
-  background: linear-gradient(to bottom, #0d2b62 5%, white 5%);
-  @apply px-8 pb-8;
+  background: linear-gradient(to bottom, #0d2b62 8%, white 8%);
+  padding: 32px;
+  padding-top: 0;
 }
 
 .sess2__wrapper {
-  @apply py-8 px-8 container mx-auto rounded-2xl shadow-xl -top-12 bg-white flex flex-col items-center;
+  @apply pt-8 pb-12 px-8 container mx-auto rounded-2xl shadow-xl bg-white flex flex-col items-center;
 }
 .sess2__wrapper h2 {
   @apply font-sora text-center text-[#203c89] text-2xl mb-8 lg:text-3xl;
@@ -54,27 +55,29 @@
 
 /* controls styles and media query in section 3 */
 #sess3 {
-  @apply container mx-auto py-8 px-8 mb-16;
+  @apply container mx-auto py-8 px-8 mb-8;
 }
 #sess3 h2 {
-  @apply font-sora text-center text-[#203c89] text-2xl mb-8 lg:text-3xl capitalize;
+  @apply font-sora text-center text-[#203c89] text-2xl mb-12 lg:text-3xl capitalize;
 }
 #sess3 h2 span {
   @apply font-bold;
 }
 .treatment__box {
-  @apply w-[384px] h-[384px] py-4 px-6 font-sora text-sm font-light text-[#203c89] bg-[#eee] rounded-xl;
+  @apply font-sora text-sm font-light text-[#203c89] bg-[#eee] rounded-xl flex flex-col;
 }
 .treatment__box h3 {
-  @apply font-semibold text-lg my-8 flex items-center;
+  @apply font-semibold my-8 flex items-center px-4;
 }
-
+.treatment__box p {
+  @apply text-xs px-4 pb-6 lg:max-w-md;
+}
 .treatment_1:before {
   content: "";
   background: url("../img/protesis.svg") center center no-repeat;
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   margin-right: 8px;
 }
 
@@ -82,8 +85,8 @@
   content: "";
   background: url("../img/ortopediatry.svg") center center no-repeat;
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   margin-right: 8px;
 }
 
@@ -91,8 +94,8 @@
   content: "";
   background: url("../img/ortodonty.svg") center center no-repeat;
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   margin-right: 8px;
 }
 .splide__arrow {
@@ -102,30 +105,30 @@
 /* controls styles and media query in section 4 */
 
 #sess4 {
-  @apply flex flex-col container mx-auto pb-[360px] px-8 relative lg:flex-row lg:justify-end lg:pb-28;
+  @apply flex flex-col container mx-auto pb-20 lg:flex-row;
 }
 .sess4__content {
-  @apply lg:pl-16;
+  @apply pl-8 py-8;
 }
 .sess4__content h2 {
   @apply font-sora font-bold text-left text-[#203c89] text-3xl mb-2 lg:text-4xl capitalize;
 }
 .sess4__content p {
-  @apply font-sora text-left text-[#203c89] mb-8;
+  @apply font-sora text-sm text-left text-[#203c89] mb-8;
 }
 
 .clinic3d {
-  @apply max-w-sm h-full object-contain absolute -bottom-96 right-0 lg:relative lg:-bottom-28 lg:max-w-2xl;
+  @apply max-w-sm h-full object-contain self-end lg:max-w-md;
 }
 
 .clinics__list {
-  @apply lg:grid grid-cols-2 justify-start items-start;
+  @apply lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-4;
 }
 .clinics__list-item:first-child {
-  @apply col-span-2;
+  @apply row-span-2;
 }
 .clinics__list-item {
-  @apply mb-4;
+  @apply mb-4 ml-4;
 }
 .clinics__list-item h3 {
   @apply font-sora font-bold text-left text-[#203c89] text-xl mb-2 lg:text-2xl capitalize;
@@ -149,7 +152,7 @@
   background: linear-gradient(to bottom, white 10%, #223b84 10%);
 }
 .sess5__wrapper {
-  @apply px-8 pb-12 container mx-auto;
+  @apply px-8 pb-12 container mx-auto flex flex-col items-center;
 }
 .sess5__wrapper h2 {
   @apply font-sora text-center text-white text-3xl mt-16 mb-8 capitalize;
@@ -159,7 +162,7 @@
 }
 
 .stripe__floating {
-  @apply bg-[#ffc700] py-6 px-4 text-left flex flex-col rounded-tr-2xl w-full rounded-tl-2xl rounded-br-2xl;
+  @apply bg-[#ffc700] py-6 px-4 text-left flex flex-col rounded-tr-2xl w-full lg:max-w-xl rounded-tl-2xl rounded-br-2xl;
 }
 .stripe__floating p {
   @apply font-sora font-medium mb-2 text-sm lg:max-w-lg;
@@ -167,16 +170,18 @@
 .stripe__floating a.book__btn {
   @apply bg-[#0f2c64] text-sm self-end text-[#ffc700] text-center;
 }
-
 .office__img {
-  @apply w-[348px] h-[348px] object-cover object-center;
+  @apply rounded-lg w-[380px] h-[280px] object-cover object-center;
 }
 
 #sess6 {
-  @apply mt-16 container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 border-b-[12px] border-b-[#223b84];
+  @apply mt-16 border-b-[12px] border-b-[#223b84];
+}
+.sess6__wrapper {
+  @apply container mx-auto flex flex-col items-center justify-center gap-12 lg:flex-row;
 }
 .sess6__content {
-  @apply py-8 w-full lg:max-w-xl;
+  @apply w-full lg:max-w-xl;
 }
 
 .sess6__content h2 {
@@ -192,7 +197,9 @@
 .sess6__content img {
   @apply max-w-sm h-full lg:max-w-lg px-8;
 }
-
+.sess6__avatar img {
+  @apply w-[320px];
+}
 .sess6__avatar {
   @apply hidden lg:block lg:max-w-md lg:h-full;
 }
@@ -213,17 +220,21 @@
 }
 
 .prize-box {
-  @apply flex flex-col w-[348px] h-full rounded-t-2xl 
-  rounded-b-2xl border-b-slate-100 border-b-2 shadow-xl;
+  @apply flex flex-col-reverse rounded-t-2xl w-[384px] h-[280px]
+  rounded-b-2xl border-b-slate-100 border-b-2;
 }
 .prize-box img {
-  @apply object-cover object-center rounded-b-2xl;
+  @apply w-[384px] h-[200px] object-cover object-center rounded-t-2xl;
 }
 .prize-box h4 {
-  @apply font-sora text-center bg-[#223b84] py-4 px-4 text-white font-semibold rounded-t-2xl;
+  @apply font-sora text-xs max-w-[384px] text-center bg-[#223b84] py-4 px-4 text-white  rounded-b-2xl shadow-2xl font-semibold;
 }
 #sess7 {
-  @apply pt-8 pb-8 mb-4 container mx-auto font-sora px-8 border-b-[12px] border-b-[#223b84];
+  @apply border-b-[12px] border-b-[#223b84];
+}
+
+.sess7__wrapper {
+  @apply container mx-auto pt-8 pb-8 mb-4 font-sora px-8;
 }
 #sess7 h3 {
   @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2 capitalize py-12;
@@ -233,7 +244,7 @@
 }
 
 .news__item {
-  @apply w-[360px] h-full pb-4 bg-[#fefefe];
+  @apply max-w-[384px] h-full pb-4 bg-[#fefefe];
 }
 .news__item h4 {
   @apply max-w-[360px] font-sora text-left text-[#27282c] py-4 px-4 font-semibold uppercase;

@@ -9,7 +9,7 @@ header {
   }
 }
 .header__wrapper {
-  @apply container mx-auto py-4 px-8 text-white font-semibold flex items-center justify-evenly font-sora;
+  @apply container mx-auto py-4 px-4 text-white font-semibold flex items-center justify-evenly font-sora;
 }
 
 #mobile__btn {
@@ -82,16 +82,16 @@ header {
 
 .header__contact a:first-child:before {
   content: "";
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   display: block;
   background: url("../img/phone.svg") center center no-repeat;
   margin-right: 0.25rem;
 }
 .header__contact a:last-child:before {
   content: "";
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1rem;
+  height: 1rem;
   display: block;
   background: url("../img/whatsapp.svg") center center no-repeat;
   margin-right: 0.25rem;

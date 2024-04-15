@@ -15,6 +15,11 @@ slides.forEach((slide) => {
     pagination: false,
     lazyLoad: true,
     breakpoints: {
+      1024: {
+        perPage: 2,
+        arrows: false,
+        lazyLoad: true,
+      },
       920: {
         perPage: 2,
         arrows: false,
@@ -22,8 +27,8 @@ slides.forEach((slide) => {
       },
       720: {
         perPage: 1,
-        arrows: true,
-        padding: "2rem",
+        arrows: false,
+        padding: "4rem",
         gap: "3rem",
         lazyLoad: true,
       },
