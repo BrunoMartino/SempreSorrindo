@@ -1,13 +1,13 @@
 #sess1_prizes {
-  @apply bg-[url("../img/sess1-prizes-mobile.webp")] h-[85vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-prizes-desktop.webp")] py-8 px-8;
+  @apply bg-[url("../img/sess1-prizes-mobile.webp")] h-[85vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-prizes-desktop.webp")];
 }
 
 .sess1_prizes-wrapper {
-  @apply pt-60 pb-8 px-4 bg-transparent bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32 lg:pt-32 container mx-auto;
+  @apply py-8 px-8 flex items-end max-w-lg h-full lg:items-end lg:max-w-full container mx-auto;
 }
 
 .sess1_prizes-wrapper h1 {
-  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase;
+  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase lg:pl-28;
 }
 
 #sess2_prizes {

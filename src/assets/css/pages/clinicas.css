@@ -1,24 +1,26 @@
 #sess1_clinics {
-  @apply bg-[url("../img/sess1-clinics-mobile.webp")] h-[85vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-clinics-desktop.webp")] py-8 px-8;
+  @apply bg-[url("../img/sess1-clinics-mobile.webp")] h-[75vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-clinics-desktop.webp")];
 }
 
 .sess1_clinics-wrapper {
-  @apply pt-48 pb-8 px-4 bg-transparent bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32 lg:pt-32 container mx-auto;
+  @apply py-8 px-8 flex items-end max-w-lg h-full lg:items-end lg:max-w-full container mx-auto;
 }
 
 .sess1_clinics-wrapper h1 {
-  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase;
+  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase pl-24;
 }
 .sess1_clinics-wrapper h1 span {
   @apply text-[#ffc700];
 }
 
 #sess2_clinics {
-  @apply container mx-auto py-16 relative h-full lg:pb-48;
+  background: linear-gradient(to bottom, #0d2b62 8%, white 8%);
+  padding: 32px;
+  padding-top: 0;
 }
 
 .sess2_clinics-wrapper {
-  @apply py-8 px-8 mx-8 rounded-2xl shadow-xl lg:absolute -top-12 bg-white z-20 lg:left-36 lg:max-w-6xl flex flex-col justify-center items-center lg:flex-row;
+  @apply pt-8 px-8 container mx-auto rounded-2xl max-w-max shadow-xl bg-white flex flex-col items-center lg:flex-row;
 }
 .sess2_clinics-wrapper p {
   @apply font-sora text-center text-[black] text-sm mb-8 lg:text-base lg:max-w-48 lg:mx-16;
