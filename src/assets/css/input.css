@@ -16,3 +16,9 @@ html,
 body {
   @apply overflow-x-hidden;
 }
+
+.splide__arrow.splide__arrow--next,
+.splide__arrow.splide__arrow--prev {
+  background-color: #ffc700;
+  color: white;
+}

@@ -76,11 +76,8 @@ header {
 .header__contact {
   @apply flex flex-col text-sm lg:text-base;
 }
-.header__contact a:first-child {
-  @apply text-xs;
-}
 .header__contact a {
-  @apply flex items-center py-2;
+  @apply flex items-center py-2 text-xs;
 }
 
 .header__contact a:first-child:before {

@@ -1,27 +1,31 @@
 /* controls styles and media query in section 1 */
 
 #sess1 {
-  @apply bg-[url("../img/sess1-bg-mobile.webp")] h-[85vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-bg-desktop.webp")] py-8 px-8;
+  @apply bg-[url("../img/sess1-bg-mobile.webp")] h-[75vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-bg-desktop.webp")] py-8 px-8;
 }
 
 .sess1_wrapper {
-  @apply pt-4 pb-8 px-4 bg-black bg-opacity-40 rounded-3xl mt-32 lg:bg-transparent lg:ml-32 lg:mt-32 container mx-auto;
+  @apply flex flex-col h-full w-full justify-end container mx-auto pb-12;
 }
 
 .sess1_wrapper h1 {
-  @apply text-3xl font-sora text-white max-w-md mb-8 font-bold lg:text-5xl lg:max-w-xl;
+  @apply text-3xl font-sora text-white w-full mb-8 font-bold;
 }
 .sess1_wrapper h1 span {
   @apply text-yellow-500;
 }
+.sess1_wrapper a {
+  @apply max-w-max;
+}
 
 /* controls styles and media query in section 2 */
 #sess2 {
-  @apply container mx-auto py-16 relative h-full lg:pb-[460px];
+  background: linear-gradient(to bottom, #0d2b62 5%, white 5%);
+  @apply px-8 pb-8;
 }
 
 .sess2__wrapper {
-  @apply py-8 px-8 mx-8 rounded-2xl shadow-xl lg:absolute -top-12 bg-white z-20 lg:left-24 lg:max-w-6xl;
+  @apply py-8 px-8 container mx-auto rounded-2xl shadow-xl -top-12 bg-white flex flex-col items-center;
 }
 .sess2__wrapper h2 {
   @apply font-sora text-center text-[#203c89] text-2xl mb-8 lg:text-3xl;
@@ -59,7 +63,7 @@
   @apply font-bold;
 }
 .treatment__box {
-  @apply w-[384px] h-[384px] py-4 px-6 font-sora font-light text-[#203c89] bg-[#eee] rounded-xl;
+  @apply w-[384px] h-[384px] py-4 px-6 font-sora text-sm font-light text-[#203c89] bg-[#eee] rounded-xl;
 }
 .treatment__box h3 {
   @apply font-semibold text-lg my-8 flex items-center;
@@ -111,7 +115,7 @@
 }
 
 .clinic3d {
-  @apply max-w-sm h-full object-contain absolute -bottom-96 lg:relative lg:-bottom-28 lg:max-w-2xl;
+  @apply max-w-sm h-full object-contain absolute -bottom-96 right-0 lg:relative lg:-bottom-28 lg:max-w-2xl;
 }
 
 .clinics__list {
@@ -142,26 +146,26 @@
 /* controls styles and media query in section 5 */
 
 #sess5 {
-  @apply bg-[#223b84] mt-20 rounded-3xl pt-28 pb-20;
+  background: linear-gradient(to bottom, white 10%, #223b84 10%);
 }
 .sess5__wrapper {
-  @apply px-8 relative container mx-auto;
+  @apply px-8 pb-12 container mx-auto;
 }
 .sess5__wrapper h2 {
-  @apply font-sora text-center text-white text-3xl mb-8 capitalize;
+  @apply font-sora text-center text-white text-3xl mt-16 mb-8 capitalize;
 }
 .sess5__wrapper h2 span {
   @apply text-[#ffc700] font-bold;
 }
 
 .stripe__floating {
-  @apply bg-[#ffc700] py-6 px-4 text-center rounded-tr-2xl rounded-tl-2xl rounded-br-2xl absolute z-20 -top-40 mr-8 lg:max-w-4xl lg:flex lg:items-center lg:text-left lg:justify-between lg:left-[25%] lg:top-[-164px];
+  @apply bg-[#ffc700] py-6 px-4 text-left flex flex-col rounded-tr-2xl w-full rounded-tl-2xl rounded-br-2xl;
 }
 .stripe__floating p {
-  @apply font-sora font-medium mb-6 text-sm lg:max-w-lg;
+  @apply font-sora font-medium mb-2 text-sm lg:max-w-lg;
 }
-.stripe__floating a {
-  @apply bg-[#0f2c64] text-[#ffc700] text-center;
+.stripe__floating a.book__btn {
+  @apply bg-[#0f2c64] text-sm self-end text-[#ffc700] text-center;
 }
 
 .office__img {
@@ -172,7 +176,7 @@
   @apply mt-16 container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 border-b-[12px] border-b-[#223b84];
 }
 .sess6__content {
-  @apply py-8 lg:max-w-xl;
+  @apply py-8 w-full lg:max-w-xl;
 }
 
 .sess6__content h2 {
@@ -186,7 +190,7 @@
   @apply font-sora text-left text-[#27282c] mb-6 text-lg px-8;
 }
 .sess6__content img {
-  @apply max-w-md h-full lg:max-w-lg px-8;
+  @apply max-w-sm h-full lg:max-w-lg px-8;
 }
 
 .sess6__avatar {
@@ -196,39 +200,40 @@
   @apply container mx-auto py-8 px-8 flex flex-col;
 }
 .artic1__content {
-  @apply mb-8 mx-auto flex flex-col items-start justify-start;
+  @apply mb-8 mx-auto flex flex-col items-center;
 }
 #artic1 h3 {
-  @apply font-sora font-bold text-left text-[#203c89] text-xl mb-2 lg:text-2xl capitalize;
+  @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2 capitalize py-12;
 }
 .artic1__content p {
-  @apply font-sora text-left max-w-[45ch] text-[#27282c] mb-6 text-lg lg:max-w-[760px];
+  @apply font-sora text-center max-w-[45ch] text-[#27282c] mb-6 lg:max-w-[760px];
 }
-.artic1__content a {
-  @apply lg:max-w-max;
-}
-
-.prize__list {
+#artic1 a.book__btn {
+  @apply max-w-max self-end mt-12;
 }
 
 .prize-box {
-  @apply flex flex-col w-[348px] rounded-t-xl;
+  @apply flex flex-col w-[348px] h-full rounded-t-2xl 
+  rounded-b-2xl border-b-slate-100 border-b-2 shadow-xl;
 }
 .prize-box img {
-  @apply h-full object-cover object-center rounded-b-2xl;
+  @apply object-cover object-center rounded-b-2xl;
 }
 .prize-box h4 {
   @apply font-sora text-center bg-[#223b84] py-4 px-4 text-white font-semibold rounded-t-2xl;
 }
 #sess7 {
-  @apply py-8 container mx-auto font-sora px-8;
+  @apply pt-8 pb-8 mb-4 container mx-auto font-sora px-8 border-b-[12px] border-b-[#223b84];
 }
 #sess7 h3 {
-  @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2  capitalize py-12;
+  @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2 capitalize py-12;
+}
+.news__list {
+  @apply px-8 w-full;
 }
 
 .news__item {
-  @apply bg-[#fff] shadow-xl w-[360px];
+  @apply w-[360px] h-full pb-4 bg-[#fefefe];
 }
 .news__item h4 {
   @apply max-w-[360px] font-sora text-left text-[#27282c] py-4 px-4 font-semibold uppercase;
@@ -241,7 +246,7 @@
   @apply w-[360px] h-[280px] object-fill object-left-top;
 }
 .news__item-foot {
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between shadow-xl;
 }
 .news__item-foot p:last-child {
   @apply text-[#203c89] font-medium;
@@ -270,15 +275,23 @@
 .review__box {
   @apply bg-[#eee] shadow-xl w-[360px] px-4 py-4 rounded-xl flex flex-col items-center;
 }
-.review__box p {
-  @apply py-12 max-w-[30ch] text-center font-sora;
+
+.review__box-item {
+  @apply flex flex-col-reverse items-center justify-center;
 }
-.review__box-name {
-  @apply flex items-center gap-4 font-sora;
+.review__box-item h3 {
+  @apply text-lg font-sora font-medium text-gray-900 text-center py-6;
 }
-.review__box-name img {
-  @apply w-12;
+.review__box-item figcaption {
+  @apply flex items-center justify-center;
 }
+.review__box-item img:first-child {
+  @apply rounded-full w-9 h-9;
+}
+.review__box-item-name {
+  @apply font-sora font-medium text-left px-3;
+}
+
 #sess8 a.book__btn {
   @apply max-w-max self-end mt-12;
 }
