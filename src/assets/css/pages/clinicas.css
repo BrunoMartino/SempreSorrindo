@@ -7,7 +7,7 @@
 }
 
 .sess1_clinics-wrapper h1 {
-  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase pl-24;
+  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase lg:pl-24;
 }
 .sess1_clinics-wrapper h1 span {
   @apply text-[#ffc700];
