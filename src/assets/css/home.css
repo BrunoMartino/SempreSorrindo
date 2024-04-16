@@ -118,7 +118,10 @@
 }
 
 .clinic3d {
-  @apply max-w-sm h-full object-contain self-end lg:max-w-md;
+  @apply self-end;
+}
+.clinic3d img {
+  @apply max-w-sm h-full object-contain lg:max-w-md;
 }
 
 .clinics__list {
