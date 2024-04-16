@@ -1,0 +1,76 @@
+#sess1_treatment {
+  @apply bg-[url("../img/sess1-treatment-mobile.webp")] h-[65vh] w-full bg-cover bg-top bg-no-repeat lg:bg-[url("../img/sess1-treatment-desktop.webp")] lg:h-[85vh];
+}
+
+.sess1_treatment-wrapper {
+  @apply py-8 px-8 flex items-end max-w-lg h-full lg:items-end lg:max-w-full container mx-auto;
+}
+
+.sess1_treatment-wrapper h1 {
+  @apply text-5xl font-sora text-white max-w-md mb-8 font-bold lg:text-6xl lg:max-w-xl uppercase lg:pl-20;
+}
+.sess1_treatment-wrapper h1 span {
+  @apply text-[#ffc700];
+}
+
+#sess2_treatment {
+  @apply py-8 px-8 container mx-auto;
+}
+
+.sess2__wrapper {
+  @apply bg-[#ffc700] py-6 px-4 text-left flex flex-col rounded-tr-2xl w-full lg:max-w-3xl rounded-tl-2xl rounded-br-2xl lg:flex-row lg:justify-between lg:items-center;
+}
+.sess2__wrapper p {
+  @apply font-sora font-medium mb-4 text-sm lg:max-w-lg text-[#0f2c64];
+}
+.sess2__wrapper a.book__btn {
+  @apply bg-[#0f2c64] text-sm self-end text-white text-center lg:self-center;
+}
+
+#sess3_treatment {
+  @apply container mx-auto py-8 px-8;
+}
+
+.treatment_grid {
+  @apply grid gap-12 justify-center items-center md:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-6;
+}
+
+.treatment_card {
+  @apply p-4 flex flex-col bg-[#fefefe] shadow-xl max-w-sm h-full border-t-2 border-t-slate-100;
+}
+
+.treatment_card-img {
+  @apply p-6 mb-6 bg-[#0f2c64] max-w-max rounded-full self-center;
+}
+
+.treatment_card-img img {
+  @apply w-16 h-16;
+}
+.treatment_card-info {
+  @apply font-sora text-sm text-center p-2;
+}
+.treatment_card-info h2 {
+  @apply text-lg font-medium mb-6;
+}
+.treatment_card-info p {
+  @apply mb-6 h-40;
+}
+.treatment_card a.book__btn {
+  @apply text-lg max-w-max px-12 rounded-2xl self-center;
+}
+
+.treatment__open-info {
+  @apply container mx-auto px-8 py-8 flex justify-center max-w-5xl;
+}
+
+.treatment__open-info p {
+  @apply font-sora text-xl py-2 flex items-center max-w-[25ch] lg:max-w-prose;
+}
+.treatment__open-info p:before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url("/dist/img/calendar-blue.svg") center center no-repeat;
+  margin-right: 8px;
+}
