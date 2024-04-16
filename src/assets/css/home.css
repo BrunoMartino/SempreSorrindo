@@ -118,7 +118,7 @@
 }
 
 .clinic3d {
-  @apply max-w-sm h-full object-contain self-end lg:max-w-md;
+  @apply max-w-[180px] h-full object-contain self-end lg:max-w-md;
 }
 
 .clinics__list {
