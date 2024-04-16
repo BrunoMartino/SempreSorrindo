@@ -195,7 +195,7 @@
   @apply font-sora text-left text-[#27282c] mb-6 text-lg px-8;
 }
 .sess6__content img {
-  @apply max-w-sm h-full lg:max-w-lg px-8;
+  @apply max-w-sm lg:max-w-lg px-8;
 }
 .sess6__avatar img {
   @apply w-[320px];
