@@ -69,6 +69,9 @@ header {
 .header__nav-menu li {
   @apply py-3 border-b-2 border-gray-400 text-center lg:border-b-0;
 }
+.header__nav-menu li a:hover {
+  @apply text-[#ffc700];
+}
 .header__nav-menu li:last-child {
   @apply border-b-0;
 }
