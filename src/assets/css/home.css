@@ -118,7 +118,7 @@
 }
 
 .clinic3d {
-  @apply self-end;
+  @apply self-end bg-blue-900;
 }
 .clinic3d img {
   @apply max-w-[280px] h-full object-contain lg:max-w-md;
