@@ -105,10 +105,10 @@
 /* controls styles and media query in section 4 */
 
 #sess4 {
-  @apply flex flex-col container mx-auto pb-20 lg:flex-row;
+  @apply flex flex-col container mx-auto lg:flex-row pb-12;
 }
 .sess4__content {
-  @apply pl-8 py-8;
+  @apply pl-8 pt-8;
 }
 .sess4__content h2 {
   @apply font-sora font-bold text-left text-[#203c89] text-3xl mb-2 lg:text-4xl capitalize;
@@ -125,7 +125,7 @@
   @apply lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-4;
 }
 .clinics__list-item:first-child {
-  @apply row-span-2;
+  @apply lg:row-span-2;
 }
 .clinics__list-item {
   @apply mb-4 ml-4;
@@ -152,7 +152,7 @@
   background: linear-gradient(to bottom, white 10%, #223b84 10%);
 }
 .sess5__wrapper {
-  @apply px-8 pb-12 container mx-auto flex flex-col items-center;
+  @apply px-8 pb-12 container mx-auto flex flex-col justify-center items-center;
 }
 .sess5__wrapper h2 {
   @apply font-sora text-center text-white text-3xl mt-16 mb-8 capitalize;
@@ -170,7 +170,7 @@
 .stripe__floating a.book__btn {
   @apply bg-[#0f2c64] text-sm self-end text-[#ffc700] text-center;
 }
-.office__img {
+.office__item img {
   @apply rounded-lg w-[380px] h-[280px] object-cover object-center;
 }
 
@@ -224,27 +224,24 @@
   rounded-b-2xl border-b-slate-100 border-b-2;
 }
 .prize-box img {
-  @apply w-[384px] h-[200px] object-cover object-center rounded-t-2xl;
+  @apply w-[380px] h-[280px] object-cover object-center rounded-t-2xl;
 }
 .prize-box h4 {
   @apply font-sora text-xs max-w-[384px] text-center bg-[#223b84] py-4 px-4 text-white  rounded-b-2xl shadow-2xl font-semibold;
 }
+
 #sess7 {
   @apply border-b-[12px] border-b-[#223b84];
 }
-
 .sess7__wrapper {
   @apply container mx-auto pt-8 pb-8 mb-4 font-sora px-8;
 }
 #sess7 h3 {
   @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2 capitalize py-12;
 }
-.news__list {
-  @apply px-8 w-full;
-}
 
 .news__item {
-  @apply h-full pb-4 bg-[#fefefe];
+  @apply max-w-sm h-full pb-4 bg-[#fefefe];
 }
 .news__item h4 {
   @apply font-sora text-left text-[#27282c] py-4 px-4 font-semibold uppercase;
@@ -254,7 +251,7 @@
 }
 
 .news__item img {
-  @apply w-[360px] h-[280px] object-fill object-left-top;
+  @apply max-w-sm h-60 object-cover object-center;
 }
 .news__item-foot {
   @apply flex items-center justify-between shadow-xl;
@@ -283,6 +280,11 @@
 .review__wrapper h4 {
   @apply absolute text-2xl font-bold font-sora bottom-[116px];
 }
+
+.review__list {
+  @apply h-full;
+}
+
 .review__box {
   @apply bg-[#eee] shadow-xl w-[360px] px-4 py-4 rounded-xl flex flex-col items-center h-[240px];
 }
