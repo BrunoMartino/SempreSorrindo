@@ -14,7 +14,7 @@
 }
 
 #sess2_treatment {
-  @apply py-8 px-8 container mx-auto;
+  @apply py-8 px-8 container mx-auto flex justify-center;
 }
 
 .sess2_treatment-wrapper {
@@ -71,6 +71,7 @@
   display: block;
   width: 52px;
   height: 52px;
-  background: url("/dist/img/calendar-blue.svg") center center no-repeat;
+  background: url("/SempreSorrindo/dist/img/calendar-blue.svg") center center
+    no-repeat;
   margin-right: 8px;
 }
