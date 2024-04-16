@@ -12,9 +12,10 @@ if (slide1) {
     perMove: 1,
     pagination: false,
     arrows: false,
+    perPage: 3,
     breakpoints: {
-      1440: {
-        perPage: 3,
+      1160: {
+        perPage: 2,
       },
       980: {
         perPage: 2,
@@ -39,9 +40,10 @@ if (slide2) {
     perMove: 1,
     pagination: false,
     arrows: false,
+    perPage: 3,
     breakpoints: {
-      1440: {
-        perPage: 3,
+      1160: {
+        perPage: 2,
       },
       980: {
         perPage: 2,
@@ -66,9 +68,10 @@ if (slide3) {
     perMove: 1,
     pagination: false,
     arrows: false,
+    perPage: 3,
     breakpoints: {
-      1440: {
-        perPage: 3,
+      1160: {
+        perPage: 2,
       },
       980: {
         perPage: 2,
@@ -89,12 +92,13 @@ if (slide4) {
     autoplay: true,
     type: "loop",
     rewind: true,
-    gap: "4rem",
+    gap: "2rem",
     perMove: 1,
     pagination: false,
     arrows: false,
+    perPage: 3,
     breakpoints: {
-      1440: {
+      1160: {
         perPage: 2,
       },
       980: {
@@ -116,12 +120,13 @@ if (slide5) {
     autoplay: true,
     type: "loop",
     rewind: true,
-    gap: "4rem",
+    gap: "2rem",
     perMove: 1,
     pagination: false,
     arrows: false,
+    perPage: 3,
     breakpoints: {
-      1440: {
+      1160: {
         perPage: 2,
       },
       980: {
