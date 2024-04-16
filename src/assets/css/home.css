@@ -117,8 +117,8 @@
   @apply font-sora text-sm text-left text-[#203c89];
 }
 
-.clinic3d img {
-  @apply max-w-[280px] h-full object-contain self-end bg-blue-900 lg:max-w-md;
+.clinic3d {
+  @apply max-w-[280px] object-contain self-end bg-blue-900 lg:max-w-md;
 }
 
 .clinics__list {
