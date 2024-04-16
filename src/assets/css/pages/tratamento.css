@@ -17,13 +17,13 @@
   @apply py-8 px-8 container mx-auto;
 }
 
-.sess2__wrapper {
+.sess2_treatment-wrapper {
   @apply bg-[#ffc700] py-6 px-4 text-left flex flex-col rounded-tr-2xl w-full lg:max-w-3xl rounded-tl-2xl rounded-br-2xl lg:flex-row lg:justify-between lg:items-center;
 }
-.sess2__wrapper p {
+.sess2_treatment-wrapper p {
   @apply font-sora font-medium mb-4 text-sm lg:max-w-lg text-[#0f2c64];
 }
-.sess2__wrapper a.book__btn {
+.sess2_treatment-wrapper a.book__btn {
   @apply bg-[#0f2c64] text-sm self-end text-white text-center lg:self-center;
 }
 
