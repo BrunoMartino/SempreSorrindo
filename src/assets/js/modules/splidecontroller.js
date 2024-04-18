@@ -139,3 +139,19 @@ if (slide5) {
   });
   slideReviews.mount();
 }
+const slide6 = document.querySelector("[data-home='slide_6']");
+
+// constrol slides for reviews
+if (slide6) {
+  const slideSmiles = new Splide(slide6, {
+    autoplay: true,
+    type: "loop",
+    rewind: true,
+    gap: "2rem",
+    perMove: 1,
+    perPage: 1,
+    pagination: false,
+    arrows: false,
+  });
+  slideSmiles.mount();
+}

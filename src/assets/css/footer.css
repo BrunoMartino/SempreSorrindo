@@ -44,3 +44,10 @@ footer {
 .footer__media img {
   @apply w-7 h-7;
 }
+.whatsapp__btn_floating {
+  @apply fixed bottom-5 right-5 z-40 bg-green-700 p-3 rounded-full animate-bounce;
+}
+
+.whatsapp__btn_floating img {
+  @apply w-10 h-10;
+}

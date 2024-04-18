@@ -168,7 +168,24 @@
       <div class="sess6__content">
         <h2>Sorrisos <br> <span>Transformados</span></h2>
         <p>Com nossos implantes dentários de última geração, transformamos sorrisos e vidas.</p>
-        <img loading="lazy" src="./dist/img/new-smile.webp" alt="antes e depois de uma boca sorrindo">
+        <div class="splide" data-home="slide_6">
+          <div class="splide__track">
+            <ul class="splide__list smiles__list">
+              <li class="splide__slide smile__list-item">
+                <img src="./dist/img/smiles/smile1.webp" alt="foto de antes e depois do sorriso de um dos pacientes.">
+              </li>
+              <li class="splide__slide smile__list-item">
+                <img src="./dist/img/smiles/smile2.webp" alt="foto de antes e depois do sorriso de um dos pacientes.">
+              </li>
+              <li class="splide__slide smile__list-item">
+                <img src="./dist/img/smiles/smile3.webp" alt="foto de antes e depois do sorriso de um dos pacientes.">
+              </li>
+              <li class="splide__slide smile__list-item">
+                <img src="./dist/img/smiles/smile4.webp" alt="foto de antes e depois do sorriso de um dos pacientes.">
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="sess6__avatar">
         <img loading="lazy" src="./dist/img/avatar.webp" alt="um avatar em 3d">
@@ -248,13 +265,13 @@
     <div class="sess7__wrapper">
       <h3>Notícias</h3>
       <div class="splide" data-home="slide_4">
-        <div class="splide__track">
+        <div class="splide__track news__wrapper">
           <ul class="splide__list news__list">
             <li class="splide__slide news__item">
               <a href="https://www.clinicassempresorrindo.com.br/noticias/199/clinicas-sempre-sorrindo-participa-da-39o-festa-do-quitute-de-jaboticabal-em-comemoracao-ao-aniversario-de-195-anos-da-cidade.html">
                 <img loading="lazy" src="./dist/img/news/noticia1.webp" alt="">
                 <h4>NOVA CLÍNICA SEMPRE SORRINDO</h4>
-                <p> A Avenida Presidente Vargas está de sorriso novo! A mais nova Clínica Sempre Sorrindo já está em pleno funcionamento e nossa equipe preparada para receber você do jeito que você merece e com o cuidado que só o Grupo Sempre Sorrindo pode oferecer.</p>
+                <p class="news__item-description"> A Avenida Presidente Vargas está de sorriso novo! A mais nova Clínica Sempre Sorrindo já está em pleno funcionamento e nossa equipe preparada para receber você do jeito que você merece e com o cuidado que só o Grupo Sempre Sorrindo pode oferecer.</p>
                 <div class="news__item-foot">
                   <p>22/06/2022</p>
                   <p>Leia Agora</p>
@@ -265,7 +282,7 @@
               <a href="https://www.clinicassempresorrindo.com.br/noticias/198/acao-de-fim-de-ano-para-voce-voltar-a-sorrir.html">
                 <img loading="lazy" src="./dist/img/news/noticia2.webp" alt="">
                 <h4>BRUXISMO PODE CAUSAR PROBLEMAS NO ESTÔMAGO?</h4>
-                <p> Dentista esclarece a questão e conta quais os melhores tratamentos para o problema</p>
+                <p class="news__item-description"> Dentista esclarece a questão e conta quais os melhores tratamentos para o problema</p>
                 <div class="news__item-foot">
                   <p>04/04/2022</p>
                   <p>Leia Agora</p>
@@ -276,7 +293,7 @@
               <a href="https://www.clinicassempresorrindo.com.br/noticias/197/jaboticabal-recebe-a-mais-nova-sempre-sorrindo.html">
                 <img loading="lazy" src="./dist/img/news/noticia3.webp" alt="">
                 <h4>JABOTICABAL RECEBE A MAIS NOVA SEMPRE SORRINDO</h4>
-                <p> A cidade de Jaboticabal está de sorriso novo! A mais nova Clínica Sempre Sorrindo já está em pleno funcionamento e nossa equipe preparada para receber você do jeito que você merece e com o cuidado que só o Grupo Sempre Sorrindo pode oferecer.</p>
+                <p class="news__item-description"> A cidade de Jaboticabal está de sorriso novo! A mais nova Clínica Sempre Sorrindo já está em pleno funcionamento e nossa equipe preparada para receber você do jeito que você merece e com o cuidado que só o Grupo Sempre Sorrindo pode oferecer.</p>
                 <div class="news__item-foot">
                   <p>07/10/2022</p>
                   <p>Leia Agora</p>
@@ -297,8 +314,8 @@
       <p>com base em 103 avaliações</p>
     </div>
     <div class="splide" data-home="slide_5">
-      <div class="splide__track">
-        <ul class="splide__list review__list">
+      <div class="splide__track review__list">
+        <ul class="splide__list ">
           <li class="splide__slide review__box">
             <div class="review__box-item ">
               <h3>"Antes do implante, eu tinha vergonha quando precisava tirar a prótese."</h3>
@@ -360,7 +377,7 @@
       <div>
         <div class="footer__links-contact">
           <div>
-            <a href="https://api.whatsapp.com/send/?phone=5516981651441&text&type=phone_number&app_absent=0">Atendimento Whatsapp:(16)98165-1441</a>
+            <a href="https://api.whatsapp.com/send/?phone=5516981651441&text&type=phone_number&app_absent=0">Atendimento Whatsapp: (16) 98165-1441</a>
             <a href="tel:0800-943-2222">telefone: 0800-943-2222</a>
           </div>
         </div>
@@ -380,6 +397,11 @@
         <a href="https://www.youtube.com/channel/UCfxR_O4k3dv-Lrcd759OYjw"><img src="./dist/img/Youtube.svg" alt="icone do youtube"></a>
       </div>
     </div>
+    </div>
+    <div class="whatsapp__btn_floating">
+      <a href="https://api.whatsapp.com/send?phone=5516981651441&text=Ol%C3%A1%20gostaria%20de%20saber%20como%20funciona%20a%20clinica!">
+        <img src="./dist/img/whatsapp-white.svg" alt="icone do whatsapp direto para atendimento.">
+      </a>
     </div>
   </footer>
   <script src="./dist/main/main.js"></script>

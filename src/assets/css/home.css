@@ -105,7 +105,7 @@
 /* controls styles and media query in section 4 */
 
 #sess4 {
-  @apply flex flex-col container mx-auto lg:flex-row pb-8;
+  @apply flex flex-col container mx-auto lg:flex-row pb-8 justify-center items-center;
 }
 .sess4__content {
   @apply pl-8 pt-8;
@@ -114,7 +114,7 @@
   @apply font-sora font-bold text-left text-[#203c89] text-3xl mb-2 lg:text-4xl capitalize;
 }
 .sess4__content p {
-  @apply font-sora text-sm text-left text-[#203c89];
+  @apply font-sora text-sm text-left text-[#203c89] mb-4;
 }
 
 .clinic3d {
@@ -194,8 +194,11 @@
 .sess6__content p {
   @apply font-sora text-left text-[#27282c] mb-6 text-lg px-8;
 }
-.sess6__content img {
-  @apply max-w-sm lg:max-w-lg px-8;
+.smile__list {
+  @apply px-4;
+}
+.smile__list-item img {
+  @apply max-w-sm lg:max-w-lg px-8 mb-6 lg:mb-0;
 }
 .sess6__avatar img {
   @apply w-[320px];
@@ -231,30 +234,31 @@
 }
 
 #sess7 {
-  @apply border-b-[12px] border-b-[#223b84];
+  @apply pb-6 border-b-[12px] border-b-[#223b84];
 }
 .sess7__wrapper {
-  @apply container mx-auto pt-8 pb-8 mb-4 font-sora px-8;
+  @apply container mx-auto py-12 mb-4 font-sora px-8;
 }
 #sess7 h3 {
   @apply font-sora font-bold text-center text-[#203c89] text-5xl mb-2 capitalize py-12;
 }
-
+.news__wrapper {
+  @apply pb-6;
+}
 .news__item {
-  @apply max-w-sm h-full pb-4 bg-[#fefefe];
+  @apply flex flex-col bg-[#fefefe] max-w-sm border-t-2 border-t-slate-100;
+}
+.news__item img {
+  @apply h-[280px];
 }
 .news__item h4 {
-  @apply font-sora text-left text-[#27282c] py-4 px-4 font-semibold uppercase;
+  @apply text-sm uppercase text-[#203c89] h-12 px-4 pt-4 font-sora font-bold;
 }
-.news__item p {
-  @apply font-sora text-xs text-left text-[#27282c] py-4 px-4 font-light;
-}
-
-.news__item img {
-  @apply max-w-sm h-60 object-cover object-center;
+.news__item-description {
+  @apply text-xs py-4 px-4 h-[120px];
 }
 .news__item-foot {
-  @apply flex items-center justify-between shadow-xl;
+  @apply flex justify-between p-4 text-xs shadow-xl;
 }
 .news__item-foot p:last-child {
   @apply text-[#203c89] font-medium;
@@ -282,7 +286,7 @@
 }
 
 .review__list {
-  @apply h-full;
+  @apply pb-4;
 }
 
 .review__box {
