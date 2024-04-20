@@ -1,7 +1,32 @@
 import Splide from "@splidejs/splide";
 
+const slideMobile = document.querySelector("[data-home='slide-mobile']");
+if (slideMobile) {
+  const MobileBanner = new Splide(slideMobile, {
+    autoplay: true,
+    type: "loop",
+    rewind: true,
+    perMove: 1,
+    pagination: false,
+    arrows: false,
+    perPage: 1,
+  });
+  MobileBanner.mount();
+}
+const slideDesktop = document.querySelector("[data-home='slide-desktop']");
+if (slideDesktop) {
+  const desktopBanner = new Splide(slideDesktop, {
+    autoplay: true,
+    type: "loop",
+    rewind: true,
+    perMove: 1,
+    pagination: false,
+    arrows: false,
+    perPage: 1,
+  });
+  desktopBanner.mount();
+}
 const slide1 = document.querySelector("[data-home='slide_1']");
-
 // controls Slide for treatments
 if (slide1) {
   const slideTreatment = new Splide(slide1, {
