@@ -6,7 +6,7 @@
   @apply relative;
 }
 .banner__list-item img {
-  @apply w-full h-full;
+  @apply w-full h-[85vh];
 }
 
 .banner__mobile-content {
